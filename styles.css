@@ -32,13 +32,53 @@ header {
 }
 
 h1 {
-  font-size: 6vw;
+  font-size: 7vw;
 }
 section {
   text-align: center;
+  margin-bottom: 2%;
 }
-#searchBox {
-  width: 60vw;
-  height: 6vw;
+
+section input {
+  text-align: center;
+  font-size: 2em;
+}
+
+#results-container {
+    font-family: 'sans serif';
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+#results-container ul {
+  list-style: none;
+  /*width: 40%;*/
+  float: center;
+}
+
+.play-button {
+  width: 80px;
+  height: 50px;
+}
+
+.avatar {
+  width: 150px;
+  height: 150px;
+}
+.grid-item {
+  text-align: center;
+  float: center;
+  padding: 2%;
+  width: 12%;
+  font-size: 2em;
+}
+#inputBar {
+  width: 50vw;
+  height: 5vw;
   margin: auto;
+}
+avatar {
+  width: 7vw;
+  height: 7vw;
 }

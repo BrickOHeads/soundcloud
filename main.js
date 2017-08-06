@@ -44,18 +44,18 @@ function insert(data) {
               <li class="band-name">${data[i].user.username}</li>
               <li class="song-title">${data[i].title}</li>
             </ul>
-            <button class="play-button" value="${data[i].stream_url}/?client_id=86b6a66bb2d863f5d64dd8a91cd8de94"><i class="fa fa-play" aria-hidden="true"></i></button>
+            <button class="play-button" value="${data[i].stream_url}/?client_id=86b6a66bb2d863f5d64dd8a91cd8de94"><i class="fa fa-play" aria-hidden="true"></i>Play</button>
           </div>
           `
         results.innerHTML += markup;
       }
     }
+
     results.addEventListener("click", function(e) {
       if (e.target && e.target.nodeName == "BUTTON") {
         let url = e.target.value;
         let player = document.getElementById("audio");
           if (player.className == "pause") {
-
             player.removeAttribute("class");
             player.classList.add("play");
             player.removeAttribute("src");
@@ -71,5 +71,4 @@ function insert(data) {
             player.pause();
           }
       }
-    })
-;
+    });
